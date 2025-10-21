@@ -80,8 +80,8 @@ export class ConfirmationModal extends Component {
         onClose={onCancel}
         footerNode={(
           <ActionRow>
-            <Button variant="link" onClick={onCancel}>Cancel</Button>
-            <Button variant="danger" onClick={onSubmit}>Yes, Delete</Button>
+            <Button variant="link" onClick={onCancel}>{intl.formatMessage(messages['account.settings.delete.account.modal.confirm.delete'])}</Button>
+            <Button variant="danger" onClick={onSubmit}>{intl.formatMessage(messages['account.settings.delete.account.modal.confirm.cancel'])}</Button>
           </ActionRow>
         )}
       >
